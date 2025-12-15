@@ -1,6 +1,6 @@
 // Download file directly to device
 function downloadAPK() {
-    const fileUrl = "IBAÑEZ_PALOMA.docx"; // must exist in same folder or correct path
+    const fileUrl = "My_Application.zip"; // must exist in same folder or correct path
 
     const link = document.createElement("a");
     link.href = fileUrl;
