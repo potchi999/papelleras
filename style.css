@@ -925,3 +925,15 @@ img {
 .button:active {
     transform: scale(0.97);
 }
+
+.project-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.glass-button.download {
+    background: linear-gradient(135deg, #00ffcc, #00bfff);
+    color: #000;
+}
