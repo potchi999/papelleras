@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <style>
+    /* 🌈 General Page Styles */
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #8fd3f4, #84fab0);
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 🏷️ Header Styles */
+    h1 {
+      color: #b46f95;
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px #fff;
+      letter-spacing: 2px;
+    }
+
+    /* 📋 Info Card */
+    .info {
+      background: #ffffffcc;
+      backdrop-filter: blur(6px);
+      padding: 25px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      max-width: 520px;
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #b46f95;
+    }
+
+    .info:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 🧾 Text Styles */
+    p {
+      font-size: 18px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 6px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #b46f95;
+    }
+
+    span {
+      color: #333;
+      font-style: italic;
+    }
+
+    /* ✨ Animated underline for labels */
+    .label::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0%;
+      background: #b46f95;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .info:hover .label::after {
+      width: 100%;
+    }
+
+    /* 💡 Button Style (optional future use) */
+    .btn {
+      display: inline-block;
+      background-color: #b46f95;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #8e4e72;
+      transform: scale(1.05);
+    }
+
+    /* 📘 Footer */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+      background: #ffffff55;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Information</h1>
+
+  <div class="info">
+    <p><span class="label">Name:</span> <span id="studentName">John Doe</span></p>
+    <p><span class="label">Age:</span> <span id="studentAge">20</span></p>
+    <p><span class="label">Enrolled:</span> <span id="studentEnrolled">Yes</span></p>
+    <p><span class="label">Section:</span> <span id="studentSection">2555C</span></p>
+    <p><span class="label">Subjects:</span> <span id="studentSubjects">Math, Science, English</span></p>
+
+    <!-- Optional button (if you want interactivity later) -->
+    <button class="btn" onclick="alert('Student details loaded successfully!')">Check Info</button>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Student Information System</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

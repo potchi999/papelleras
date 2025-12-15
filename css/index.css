@@ -1,0 +1,287 @@
+@layer Css_Custom_variables {
+    /* ===== CSS CUSTOM PROPERTIES (CSS VARIABLES) ===== */
+    :root {
+        /* === Light Theme Colors === */
+        --color-primary: hsl(212, 100%, 50%);
+        --color-primary-hover: hsl(212, 100%, 40%);
+        --color-secondary: hsl(248, 60%, 55%);
+        --color-success: hsl(145, 65%, 50%);
+        --color-warning: hsl(33, 100%, 50%);
+        --color-danger: hsl(0, 100%, 50%);
+
+        /* === Blob Colors === */
+        --blob1-start: hsl(0, 100%, 70%);
+        --blob1-end: hsl(25, 100%, 65%);
+        --blob2-start: hsl(168, 72%, 60%);
+        --blob2-end: hsl(168, 40%, 50%);
+        --blob3-start: hsl(160, 60%, 70%);
+        --blob3-end: hsl(180, 40%, 60%);
+        --blob4-start: hsl(350, 100%, 80%);
+        --blob4-end: hsl(20, 100%, 70%);
+
+        /* === Neutral Colors === */
+        --color-white: hsl(0, 0%, 100%);
+        --color-gray-50: hsl(0, 0%, 95%);
+        --color-gray-100: hsl(0, 0%, 90%);
+        --color-gray-200: hsl(0, 0%, 82%);
+        --color-gray-300: hsl(0, 0%, 78%);
+        --color-gray-400: hsl(0, 0%, 68%);
+        --color-gray-500: hsl(0, 0%, 56%);
+        --color-gray-600: hsl(0, 0%, 39%);
+        --color-gray-700: hsl(0, 0%, 28%);
+        --color-gray-800: hsl(0, 0%, 23%);
+        --color-gray-900: hsl(0, 0%, 11%);
+        --color-black: hsl(0, 0%, 0%);
+
+        /* === Backgrounds === */
+        --bg-primary: hsl(230, 60%, 63%);
+        --bg-glass: hsla(0, 0%, 100%, 0.1);
+        --bg-glass-hover: hsla(0, 0%, 100%, 0.15);
+        --bg-card: hsla(0, 0%, 100%, 0.08);
+        --bg-overlay: hsla(0, 0%, 0%, 0.4);
+        --app-bg: var(--bg-primary);
+
+        /* === Text Colors === */
+        --text-primary: var(--color-white);
+        --text-secondary: hsla(0, 0%, 100%, 0.8);
+        --text-tertiary: hsla(0, 0%, 100%, 0.6);
+        --text-quaternary: hsla(0, 0%, 100%, 0.4);
+
+        /* === Borders === */
+        --border-primary: hsla(0, 0%, 100%, 0.2);
+        --border-secondary: hsla(0, 0%, 100%, 0.1);
+        --border-focus: hsla(0, 0%, 100%, 0.4);
+
+        /* === Shadows === */
+        --shadow-light: 0 4px 16px hsla(0, 0%, 0%, 0.1);
+        --shadow-medium: 0 8px 32px hsla(231, 70%, 27%, 0.37);
+        --shadow-heavy: 0 16px 48px hsla(0, 0%, 0%, 0.3);
+        --shadow-glow: 0 0 20px hsla(0, 0%, 100%, 0.1);
+
+        /* === Gradient === */
+        --app-bg-gradient:
+            radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+
+        /* === Typography === */
+        --font-family-primary: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        --font-family-secondary: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+        --font-size-xxs: clamp(0.5rem, calc(0.625rem + 0.2vw), 0.75rem);
+        --font-size-xs: clamp(0.625rem, calc(0.75rem + 0.25vw), 0.875rem);
+        --font-size-sm: clamp(0.75rem, calc(0.875rem + 0.3vw), 1rem);
+        --font-size-base: clamp(0.875rem, calc(1rem + 0.35vw), 1.125rem);
+        --font-size-lg: clamp(1rem, calc(1.125rem + 0.2vw), 1rem);
+        --font-size-xl: clamp(1.125rem, calc(1rem + 0.45vw), 1.5rem);
+        --font-size-2xl: clamp(1.25rem, calc(1.5rem + 0.5vw), 1.75rem);
+        --font-size-3xl: clamp(1.5rem, calc(1.875rem + 0.6vw), 2.25rem);
+        --font-size-4xl: clamp(1.75rem, calc(2.25rem + 0.75vw), 2.75rem);
+        --font-size-5xl: clamp(2.5rem, calc(3rem + 1vw), 4rem);
+        --font-size-6xl: clamp(3.25rem, calc(4rem + 1.2vw), 5rem);
+
+        --font-weight-light: 300;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+
+        --line-height-tight: 1.25;
+        --line-height-normal: 1.5;
+        --line-height-relaxed: 1.75;
+
+        /* === Spacing === */
+        --space-xxxs: clamp(0.05rem, calc(0.0625rem + 0.1vw), 0.1rem);
+        --space-xxs: clamp(0.1rem, calc(0.125rem + 0.15vw), 0.2rem);
+        --space-xs: clamp(0.2rem, calc(0.25rem + 0.2vw), 0.4rem);
+        --space-sm: clamp(0.4rem, calc(0.5rem + 0.25vw), 0.6rem);
+        --space-md: clamp(0.8rem, calc(1rem + 0.3vw), 1.2rem);
+        --space-lg: clamp(1.2rem, calc(1.5rem + 0.35vw), 1.8rem);
+        --space-xl: clamp(1.6rem, calc(2rem + 0.2vw), 2.5rem);
+        --space-2xl: clamp(2.5rem, calc(3rem + 0.4vw), 3rem);
+        --space-3xl: clamp(3.5rem, calc(4rem + 0.5vw), 5rem);
+        --space-4xl: clamp(5rem, calc(6rem + 0.6vw), 7rem);
+        --space-5xl: clamp(6.5rem, calc(8rem + 0.7vw), 9rem);
+
+        /* === Border Radius === */
+        --radius-sm: clamp(6px, calc(8px + 0.1vw), 12px);
+        --radius-md: clamp(10px, calc(12px + 0.15vw), 16px);
+        --radius-lg: clamp(14px, calc(16px + 0.2vw), 20px);
+        --radius-xl: clamp(18px, calc(20px + 0.25vw), 24px);
+        --radius-2xl: clamp(20px, calc(24px + 0.3vw), 28px);
+        --radius-3xl: clamp(28px, calc(32px + 0.35vw), 36px);
+        --radius-full: clamp(45px, calc(50px + 0.4vw), 55px);
+        --radius-circle: 50%;
+
+        /* === Transitions === */
+        --transition-fast: 0.15s ease;
+        --transition-normal: 0.3s ease;
+        --transition-slow: 0.5s ease;
+        --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        /* === Z-Index === */
+        --z-dropdown: 1000;
+        --z-sticky: 1020;
+        --z-fixed: 1030;
+        --z-modal-backdrop: 1040;
+        --z-modal: 1050;
+        --z-popover: 1060;
+        --z-tooltip: 1070;
+    }
+
+    /* === Dark Theme Variables === */
+
+    [data-theme="dark"] {
+        /* Brand Colors */
+        --color-primary: hsl(212, 100%, 40%);
+        --color-primary-hover: hsl(212, 100%, 33%);
+        --color-secondary: hsl(247, 45%, 45%);
+        --color-success: hsl(145, 65%, 40%);
+        --color-warning: hsl(33, 100%, 40%);
+        --color-danger: hsl(0, 100%, 40%);
+
+        /* === Dark Blob Colors (Darker HSL) === */
+        --blob1-start: hsl(0, 100%, 30%);
+        --blob1-end: hsl(15, 100%, 40%);
+        --blob2-start: hsl(170, 40%, 23%);
+        --blob2-end: hsl(170, 35%, 28%);
+        --blob3-start: hsl(180, 30%, 25%);
+        --blob3-end: hsl(180, 25%, 20%);
+        --blob4-start: hsl(345, 50%, 30%);
+        --blob4-end: hsl(20, 50%, 35%);
+
+        /* Backgrounds */
+        --bg-primary: hsl(240, 30%, 5%);
+        --bg-glass: hsla(240, 15%, 8%, 0.6);
+        --bg-glass-hover: hsla(240, 15%, 8%, 0.75);
+        --bg-card: hsla(240, 15%, 10%, 0.7);
+        --bg-overlay: hsla(0, 0%, 0%, 0.55);
+        --app-bg: var(--bg-primary);
+
+        /*=== Gradient ===*/
+        --app-bg-gradient:
+            radial-gradient(circle at 20% 50%, rgba(80, 60, 180, 0.06) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(200, 80, 160, 0.06) 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, rgba(80, 150, 200, 0.06) 0%, transparent 50%);
+
+        /* Text */
+        --text-primary: hsla(0, 0%, 100%, 0.95);
+        --text-secondary: hsla(0, 0%, 100%, 0.8);
+        --text-tertiary: hsla(0, 0%, 100%, 0.6);
+        --text-quaternary: hsla(0, 0%, 100%, 0.35);
+
+        /* Borders */
+        --border-primary: hsla(0, 0%, 100%, 0.2);
+        --border-secondary: hsla(0, 0%, 100%, 0.1);
+        --border-focus: hsla(0, 0%, 100%, 0.3);
+
+        /* Shadows */
+        --shadow-light: 0 4px 16px hsla(0, 0%, 0%, 0.35);
+        --shadow-medium: 0 8px 32px hsla(0, 0%, 0%, 0.55);
+        --shadow-heavy: 0 16px 48px hsla(0, 0%, 0%, 0.75);
+    }
+}
+
+/*! ===== BASE LAYER ===== */
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-normal);
+        color: var(--text-primary);
+
+        background: var(--bg-primary);
+
+        background-blend-mode: normal;
+
+        overflow-x: hidden;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    /* FIXED: Enhanced scrollbar styling for WebKit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        /* background: rgba(0, 0, 0, 0.245); */
+        border-radius: var(--radius-full);
+        margin: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+        border-radius: var(--radius-full);
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        transition: background var(--transition-fast);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4));
+        background-clip: padding-box;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5));
+        background-clip: padding-box;
+    }
+
+    /* FIXED: Enhanced scrollbar for Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    [data-theme="dark"] {
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.35);
+            /* darker track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, rgba(80, 80, 80, 0.7), rgba(60, 60, 60, 0.6));
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, rgba(100, 100, 100, 0.8), rgba(80, 80, 80, 0.75));
+        }
+
+        * {
+            scrollbar-color: rgba(90, 90, 90, 0.7) rgba(20, 20, 20, 0.5);
+        }
+    }
+}

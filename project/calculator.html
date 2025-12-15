@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+<header class="glass">
+    <button class="glass-button" onclick="history.back()">
+    ← Back
+</button>
+    <h1>Web Calculator</h1>
+</header>
+
+<main class="calculator-container glass">
+    <div class="calculator">
+        <input type="text" id="display" disabled placeholder="0">
+        <div class="buttons">
+            <button class="btn clear">C</button>
+            <button class="btn operator">÷</button>
+            <button class="btn operator">×</button>
+            <button class="btn operator">−</button>
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator">+</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn equals" rowspan="2">=</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+
+            <button class="btn number">0</button>
+            <button class="btn number">.</button>
+        </div>
+    </div>
+</main>
+
+<footer class="glass">
+    <p>© 2025 Cyril Kate Papelleras</p>
+</footer>
+
+<script src="calculator.js"></script>
+</body>
+</html>

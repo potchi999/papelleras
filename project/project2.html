@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator App Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+
+<header class="glass">
+    <button class="glass-button" onclick="history.back()">
+    ← Back
+</button>
+</header>
+
+<main class="project-page">
+
+    <!-- ================= ABOUT ================= -->
+    <section class="glass project-section">
+        <h2>About Calculator</h2>
+        <p>
+            This Calculator App is a simple yet powerful application developed as part of my
+            app and web development projects. It supports basic arithmetic operations and
+            focuses on clean UI, performance, and usability.
+        </p>
+
+        <ul>
+            <li>➕ Addition</li>
+            <li>➖ Subtraction</li>
+            <li>✖ Multiplication</li>
+            <li>➗ Division</li>
+        </ul>
+    </section>
+
+    <!-- ================= TECHNOLOGY ================= -->
+    <section class="glass project-section">
+        <h2>Technologies Used</h2>
+        <p>
+            Web Version:
+            <strong>HTML, CSS, JavaScript</strong>
+        </p>
+        <p>
+            Mobile Version:
+            <strong>Android (APK)</strong>
+        </p>
+    </section>
+
+    <!-- ================= DOWNLOAD ================= -->
+    <section class="glass project-section">
+        <h2>Download</h2>
+
+        <button class="glass-button" onclick="downloadAPK()">
+            <ion-icon name="download-outline"></ion-icon>
+            Download APK (ZIP)
+        </button>
+
+        <button class="glass-button" onclick="openWebCalculator()">
+            <ion-icon name="globe-outline"></ion-icon>
+            Open Web Version
+        </button>
+    </section>
+
+</main>
+
+<footer class="glass">
+    <p>© 2025 Cyril Kate Papelleras</p>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script src="project2.js"></script>
+
+</body>
+</html>

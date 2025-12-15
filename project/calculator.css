@@ -1,0 +1,134 @@
+/* ================= GLOBAL STYLES ================= */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* ================= GLASS EFFECT ================= */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
+
+/* ================= HEADER & FOOTER ================= */
+header, footer {
+    text-align: center;
+}
+
+/* ================= CALCULATOR ================= */
+.calculator-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 15px;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+button.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button.operator {
+    background: rgba(255, 0, 127, 0.4);
+}
+
+button.operator:hover {
+    background: rgba(255, 0, 127, 0.6);
+}
+
+button.equals {
+    background: rgba(0, 200, 255, 0.4);
+    grid-row: span 2;
+}
+
+button.equals:hover {
+    background: rgba(0, 200, 255, 0.6);
+}
+
+button.clear {
+    background: rgba(255, 50, 50, 0.4);
+}
+
+button.clear:hover {
+    background: rgba(255, 50, 50, 0.6);
+}
+
+.glass-button {
+    margin-top: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: #fff;
+    background: linear-gradient(
+        105deg,
+        #b74b4b,
+        #ff007f,
+        #ffb347
+    );
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    
+}
+
+/* BUTTON HOVER */
+.glass-button:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 0, 127, 0.35);
+}
+
+/* BUTTON ACTIVE */
+.glass-button:active {
+    transform: scale(0.97);
+}

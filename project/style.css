@@ -1,0 +1,139 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ================= GLASS BASE ================= */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+}
+
+/* ================= HEADER ================= */
+header {
+    margin: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* ================= BUTTON ================= */
+.glass-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #b74b4b, #ff007f, #ffb347);
+    background-size: 200% 200%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.35s ease;
+}
+
+.glass-button:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 0, 127, 0.35);
+}
+
+.glass-button ion-icon {
+    font-size: 1rem;
+}
+
+/* ================= MAIN ================= */
+.project-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.8rem;
+}
+
+/* ================= SECTIONS ================= */
+.project-section {
+    padding: 1.8rem;
+}
+
+.project-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: #ffb347;
+}
+
+.project-section p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* LIST */
+.project-section ul {
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+}
+
+.project-section li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+/* ================= DOWNLOAD BUTTONS ================= */
+.project-section button {
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    margin: 2rem 1rem 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .project-section {
+        padding: 1.4rem;
+    }
+
+    .glass-button {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.6rem;
+    }
+}
